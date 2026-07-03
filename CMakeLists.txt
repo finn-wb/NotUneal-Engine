@@ -7,7 +7,14 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Add subdirectories
 add_subdirectory(Engine/Core)
 add_subdirectory(Engine/Scene)
+add_subdirectory(Engine/Rendering)
+add_subdirectory(Engine/Components)
 
-# Optional: Editor and Tools can be added later
-# add_subdirectory(Editor)
-# add_subdirectory(Tools)
+# Create main library
+add_library(NotUnealEngine INTERFACE)
+target_link_libraries(NotUnealEngine INTERFACE
+    NotUnealCore
+    NotUnealScene
+    NotUnealRendering
+    NotUnealComponents
+)
