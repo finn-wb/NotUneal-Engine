@@ -1,0 +1,45 @@
+# Build files
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+*.cmake
+
+# IDE
+.vscode/
+.idea/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.cbp
+
+# Compiled objects
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+
+# Executables
+*.exe
+*.app
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Dependencies
+third_party/
+!third_party/.gitkeep
+
+# Editor temp files
+*.swp
+*.swo
+*~
+.editorconfig
+
+# Project files
+*.notuneal
+*.nuproj
